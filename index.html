@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chas form test - Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Chas Admin Area</h1>
+        <p>Please login to access</p>
+        <div class="leftmenu">
+          <a href="./index.html">Login</a> |
+          <a href="./forget.html">Forget password</a> |
+          <a href="./signup.html">Signup</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="formcontainer">
+          <h2>Logga in</h2>
+          <div class="formbox">
+            <form action="https://httpbin.org/anything" method="post">
+              <div class="userName">
+                <label for="username">Username</label>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="password">
+                <label for="pass">Password</label>
+                <input
+                  id="pass"
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <button type="submit">Skicka</button>
+            </form>
+          </div>
+          <div class="infotext">
+            <a href="./forget.html">Forgot Password?</a>
+            <p>New to Chas Academy? <a href="./signup.html">Signup</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

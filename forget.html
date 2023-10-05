@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chas form test - Forget password</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Chas Admin Area</h1>
+        <p>Please login to access</p>
+        <div class="leftmenu">
+          <a href="./index.html">Login</a> |
+          <a href="./forget.html">Forget password</a> |
+          <a href="./signup.html">Signup</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="formcontainer">
+          <h2>Forgot your password?</h2>
+          <div class="formbox">
+            <form action="https://httpbin.org/anything" method="post">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="yourname@chasacademy.se"
+                required
+              />
+              <button type="submit">Skicka</button>
+            </form>
+          </div>
+          <div class="infotext">
+            <p>Alreay have an account? <a href="./index.html">Login</a></p>
+            <p>New to Chas Academy? <a href="./signup.html">Signup</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

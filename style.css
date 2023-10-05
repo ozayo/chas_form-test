@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 100vh;
+}
+.left {
+  background-color: rgb(13, 121, 236);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+}
+.leftmenu {
+  margin-top: 10px;
+}
+.leftmenu a {
+  color: #fff;
+  font-weight: 100;
+  font-size: 12px;
+  text-decoration: none;
+}
+.formcontainer {
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 15px;
+}
+.formbox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button {
+  background-color: #0d79ec;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.infotext {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 12px;
+  color: #494949;
+}
+.infotext a {
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #0d79ec;
+}
+/* Form style*/
+.formbox form {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 15px;
+}
+input,
+.signup .message textarea {
+  width: 100%;
+  border: solid 1px #c2c2c2;
+  border-radius: 5px;
+  height: 40px;
+  padding: 5px;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.signup .formbox form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.signup .subbutton {
+  grid-column: span 2;
+}
+.signup .subbutton button {
+  width: 100%;
+}
+.signup .message {
+  grid-column: span 2;
+}
+.signup .message textarea {
+  min-height: 90px;
+}
+.edu input {
+  width: inherit;
+  height: auto;
+}
+.edu div {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.edu p {
+  font-size: 15px;
+}
+.edu {
+  margin-top: 5px;
+  grid-column: span 2;
+}

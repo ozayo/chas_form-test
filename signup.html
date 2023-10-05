@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chas form test - Signup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container signup">
+      <div class="left">
+        <h1>Chas Admin Area</h1>
+        <p>Please login to access</p>
+        <div class="leftmenu">
+          <a href="./index.html">Login</a> |
+          <a href="./forget.html">Forget password</a> |
+          <a href="./signup.html">Signup</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="formcontainer">
+          <h2>Signup</h2>
+          <div class="formbox">
+            <form action="https://httpbin.org/anything" method="post">
+              <div class="name">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="First name"
+                  required
+                />
+              </div>
+              <div class="surname">
+                <label for="surname">Surname</label>
+                <input
+                  id="surname"
+                  name="surname"
+                  type="text"
+                  placeholder="Surname"
+                  required
+                />
+              </div>
+              <div class="email">
+                <label for="email">Your email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="text"
+                  placeholder="yourname@chasacademy.se"
+                  required
+                />
+              </div>
+              <div class="password">
+                <label for="pass">Password</label>
+                <input
+                  id="pass"
+                  name="password"
+                  type="password"
+                  placeholder="*****"
+                  required
+                />
+              </div>
+              <div class="edu">
+                <p>Please select your program:</p>
+                <div>
+                  <input type="radio" id="fmw" name="chas_edu" value="fmw23" />
+                  <label for="fmw">FMW23</label>
+                </div>
+                <div>
+                  <input type="radio" id="uxui" name="chas_edu" value="uxui" />
+                  <label for="uxui">UXUI23</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="fulsstack"
+                    name="chas_edu"
+                    value="fullstack"
+                  />
+                  <label for="fullstack">FSJS23</label>
+                </div>
+              </div>
+              <div class="message">
+                <label for="msg">Message</label>
+                <textarea id="msg" name="message"></textarea>
+              </div>
+              <div class="subbutton">
+                <button type="submit">Skicka</button>
+              </div>
+            </form>
+          </div>
+          <div class="infotext">
+            <a href="./forget.html">Forgot Password?</a>
+            <p>Alreay have an account? <a href="./index.html">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
