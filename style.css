@@ -148,7 +148,7 @@ label {
   width: 200px;
   height: 30px;
 }
-
+/* Some responsive touch */
 @media only screen and (max-width: 600px) {
   .container {
     display: grid;
