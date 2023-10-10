@@ -14,7 +14,7 @@
         <div class="leftmenu">
           <a href="./index.html">Login</a> |
           <a href="./forget.html">Forget password</a> |
-          <a href="./signup.html">Signup</a>
+          <a href="./signup.html" class="active">Signup</a>
         </div>
       </div>
       <div class="right">
@@ -82,9 +82,57 @@
                   <label for="fullstack">FSJS23</label>
                 </div>
               </div>
+              <!-- Checkboxes start -->
+              <div class="selectbox">
+                <p>Please select your transport:</p>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="vehicle1"
+                    name="vehicle1"
+                    value="SL"
+                  />
+                  <label for="vehicle1"> SL</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="vehicle2"
+                    name="vehicle2"
+                    value="Car"
+                  />
+                  <label for="vehicle2"> Bike</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="vehicle3"
+                    name="vehicle3"
+                    value="Boat"
+                  />
+                  <label for="vehicle3"> Car</label>
+                </div>
+              </div>
+              <!-- Checkboxes end -->
+              <!-- Selectboxes start -->
+              <div class="favbrand">
+                <label for="cars">Choose your favory brand:</label>
+                <select name="cars" id="cars">
+                  <option id="volvo" value="volvo">Volvo</option>
+                  <option id="saab" value="saab">Saab</option>
+                  <option id="opel" value="opel">Opel</option>
+                  <option id="audi" value="audi">Audi</option>
+                </select>
+              </div>
+              <!-- Selectboxes end -->
               <div class="message">
                 <label for="msg">Message</label>
-                <textarea id="msg" name="message"></textarea>
+                <textarea
+                  id="msg"
+                  name="message"
+                  type="text"
+                  placeholder="Your message.."
+                ></textarea>
               </div>
               <div class="subbutton">
                 <button type="submit">Skicka</button>

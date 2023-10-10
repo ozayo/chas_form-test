@@ -27,14 +27,25 @@ body {
   align-items: center;
   overflow-x: scroll;
 }
+.signup .right {
+  justify-content: flex-start;
+  padding-top: 50px;
+}
 .leftmenu {
   margin-top: 10px;
 }
 .leftmenu a {
-  color: #fff;
   font-weight: 100;
   font-size: 12px;
   text-decoration: none;
+  background-color: #ffffffa1;
+  color: #000;
+  border-radius: 5px;
+  padding: 2px 8px;
+}
+.leftmenu a:hover,
+.leftmenu a.active {
+  background-color: #fff;
 }
 .formcontainer {
   background-color: #f0f0f0;
@@ -106,15 +117,46 @@ label {
   width: inherit;
   height: auto;
 }
-.edu div {
+.edu div,
+.selectbox div {
   display: inline-block;
   margin-top: 10px;
   margin-right: 5px;
 }
-.edu p {
+.edu p,
+.selectbox p {
   font-size: 15px;
 }
 .edu {
   margin-top: 5px;
   grid-column: span 2;
+}
+.signup .selectbox {
+  grid-column: span 2;
+}
+.selectbox input {
+  width: 20px;
+  height: 15px;
+}
+.signup .favbrand {
+  grid-column: span 2;
+}
+.favbrand label {
+  display: block;
+}
+.favbrand select {
+  width: 200px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    height: 100vh;
+  }
+  .left {
+    padding: 30px 0px;
+  }
 }
